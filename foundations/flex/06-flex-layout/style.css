@@ -1,10 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+.header, .footer{
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 16px;
+}
+
+.footer{
+  background-color: #ddd;
+}
+
+.left-links, .right-links {
+  display: flex;
+  flex-flow: row;
+}
+
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.content{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
 
 img {
@@ -16,6 +42,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px;
 }
 
 input {
@@ -23,4 +50,23 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+ul{
+    list-style: none;
+    gap: 16px;
+    padding: 0px;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  list-style: none;
+  color: rgb(116, 116, 116); /* Inherits the color from the parent element */
+  text-decoration: none; /* Removes the underline */
+  font-weight: normal; /* Resets any bolding */
+  cursor: pointer; /* Ensures the cursor remains a pointer on hover */
+  outline: none; /* Removes the outline that appears on focus in some browsers */
 }
